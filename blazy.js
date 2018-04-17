@@ -109,7 +109,7 @@
 
         //handle multi-served image src (obsolete)
         each(scope.options.breakpoints, function(object) {
-            if (object.width >= window.screen.width) {
+            if (object.width >= window.innerWidth) {
                 _source = object.src;
                 return false;
             }
